@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #a3a8ac;
+}
+.container{
+    width: 45%;
+    height: 50vh;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 12px 12px 20px #ecf0f3;
+}
+.display #screen{
+    width: 100%;
+    height: 70px;
+    font-size: 35px;
+    outline: none;
+    padding-right: .5em;
+    text-align: right;
+    background: #ecf0f3;
+    border-radius: 6px;
+    box-shadow: inset 8px 8px 8px #cbced1,
+                inset -8px -8px 8px #fff;
+} 
+.btns{
+    width: 100%;
+    margin-top: 1.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.btns .rows button{
+    width: 80px;
+    height: 30px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    margin: 5px;
+    border-radius: 4px;
+    background-color: #cbced1;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.74);
+}
+.btns .rows button:hover{
+    box-shadow: inset 5px 5px 8px rgba(16,16,16,.1),
+                inset -5px -5px 8px #fff;
+                background: #fff;
+                transition: .1s;
+}
+@media screen and (max-width: 500px){
+    .btns .rows button{
+        width: 20px;
+        height: 20px;
+        font-size: 13px;
+        border: none;
+        outline: none;
+        justify-content: center;
+        align-items: center;
+        margin: 5.7px;
+        margin-top: 12px;
+        border-radius: 2px;
+        background-color: #cbced1;
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.74),
+                    -5px -5px 8px #fff; 
+    }
+    .btns{
+        width: 100%;
+        margin-top: 1.7em;
+    }
+}
+#eval{
+    box-shadow: inset 5px 5px 8px #66d9ff,
+                inset -5px -5px 8px #00ace6;
+}
+#eval:hover{
+    box-shadow: inset 5px 5px 8px #00ace6,
+                inset -5px -5px 8px #00ace6;
+}
+#eval2:hover{
+    box-shadow: inset 5px 5px 8px #2eb82e,
+                inset -5px -5px 8px #33cc33;
+}
+#eval1:hover{
+box-shadow: inset 5px 5px 8px #e60073,
+            inset -5px -5px 8px #ff3399;
+}
